@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from .handlers import chat_completions, models_v1, models_v0
+from handlers import chat_completions, models_v1, models_v0
 
 def create_app() -> FastAPI:
     app = FastAPI()

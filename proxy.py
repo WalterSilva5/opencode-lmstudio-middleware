@@ -1,7 +1,7 @@
 import httpx
 from fastapi.responses import Response
-from .utils import filter_headers, filter_response_headers
-from .config import Config
+from utils import filter_headers, filter_response_headers
+from config import Config
 
 async def handle_non_stream_request(body: bytes, headers: dict) -> Response:
     async with httpx.AsyncClient(timeout=Config.TIMEOUT) as client:

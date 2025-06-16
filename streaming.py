@@ -1,8 +1,8 @@
 from typing import AsyncGenerator
 import httpx
 import json
-from .utils import create_error_response, format_sse_line, is_valid_json
-from .config import Config
+from utils import create_error_response, format_sse_line, is_valid_json
+from config import Config
 
 async def handle_error_response(response: httpx.Response) -> AsyncGenerator[str, None]:
     try:

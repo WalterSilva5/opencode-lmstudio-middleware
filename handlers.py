@@ -1,9 +1,9 @@
 from fastapi import Request
 from fastapi.responses import StreamingResponse, Response
 import json
-from .utils import filter_headers, remove_tool_calls
-from .streaming import create_stream_generator
-from .proxy import handle_non_stream_request, proxy_models_endpoint
+from utils import filter_headers, remove_tool_calls
+from streaming import create_stream_generator
+from proxy import handle_non_stream_request, proxy_models_endpoint
 
 async def chat_completions(request: Request):
     body = await request.body()
