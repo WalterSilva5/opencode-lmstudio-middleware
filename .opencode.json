@@ -1,0 +1,14 @@
+{
+  "data": {},
+  "agents": {
+    "coder": {
+      "model": "local.llama-3.2-3b-instruct",
+      "maxTokens": 0,
+      "reasoningEffort": "high"
+    }
+  },
+  "tui": {
+    "theme": "opencode"
+  },
+  "shell": {}
+}
