@@ -17,6 +17,14 @@ cd opencode-lmstudio-middleware
 pip install -r requirements.txt
 ```
 
+## Instalação de Dependências
+
+Instale as dependências necessárias com o comando:
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Configuração
 
 1. **Defina a variável de ambiente** que indica o endereço e a porta do middleware:
@@ -31,12 +39,22 @@ pip install -r requirements.txt
     cp .opencode.json ~/
     ```
 
+## Configuração da Variável de Ambiente
+
+Crie um arquivo `.env` na raiz do projeto ou defina a variável de ambiente `LM_STUDIO_BASE_URL` para apontar para o endereço do LMStudio. Por exemplo:
+
+```bash
+export LM_STUDIO_BASE_URL=http://192.168.1.6:1234
+```
+
+Se não for definida, o padrão será `http://localhost:1234`.
+
 ## Uso
 
 Inicie o middleware antes de executar o OpenCode:
 
 ```bash
-python middleware.py
+python main.py
 ```
 
 Depois, execute o OpenCode normalmente.
