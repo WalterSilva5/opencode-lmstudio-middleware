@@ -12,7 +12,7 @@ Middleware que permite a comunicação entre as aplicações **OpenCode** e **LM
 Clone este repositório e instale as dependências necessárias:
 
 ```bash
-git clone https://github.com/seu-usuario/opencode-lmstudio-middleware.git
+git clone https://github.com/WalterSilva5/opencode-lmstudio-middleware.git
 cd opencode-lmstudio-middleware
 pip install -r requirements.txt
 ```
